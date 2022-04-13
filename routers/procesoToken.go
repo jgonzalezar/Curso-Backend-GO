@@ -16,7 +16,7 @@ var Email string
 var IDUsuario string
 /*ProcesoToken procesa el token para extraer sus valores*/
 func ProcesoToken(tk string) (*models.Claim, bool, string, error){
-	miClave := []byte("JuanilloPillo_Carajillo") 
+	miClave := []byte("MastersdelDesarrollo_grupodeFacebook") 
 	claims := &models.Claim{}
 
 	spliToken := strings.Split(tk, "Bearer")
@@ -38,7 +38,7 @@ func ProcesoToken(tk string) (*models.Claim, bool, string, error){
 		return claims, encontrado, IDUsuario, nil
 	}
 	if !tkn.Valid{
-		return claims, false, string(""), errors.New("Token invalido")
+		return claims, false, string(""), errors.New(" token invalido")
 	}
 
 	return claims, false, string(""), err
