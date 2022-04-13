@@ -1,5 +1,5 @@
 module github.com/jgonzalezar/Curso-Backend-GO
-
+// +heroku goVersion go1.18
 go 1.18
 
 require (
